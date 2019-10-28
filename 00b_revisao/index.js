@@ -12,3 +12,18 @@
 // [] anonymous function
 // [] arrow function
 // [] template string
+
+const botao = document.getElementById('trocaCor');
+const body = document.body;
+
+botao.addEventListener('click', () => {
+    const r = geraInteiro();
+    const g = geraInteiro();
+    const b = geraInteiro();
+    body.style.backgroundColor = 'rgb('+r+','+ g +','+ b +')'
+   
+});
+
+ geraInteiro = () => {
+    return parseInt(Math.random()*255);
+}
