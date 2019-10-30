@@ -8,6 +8,7 @@
 
 // ------------------------------------------------------------------------
 // 2. melhorando o código
+<<<<<<< HEAD
 // [] remover repetição de código
 // [] anonymous function
 // [] arrow function
@@ -27,3 +28,22 @@ botao.addEventListener('click', () => {
  geraInteiro = () => {
     return parseInt(Math.random()*255);
 }
+=======
+// [x] remover repetição de código
+// [x] anonymous function
+// [x] arrow function
+// [x] template string
+
+const body = document.body;
+const botao = document.getElementById('trocaCor');
+
+body.style.backgroundColor = 'purple';
+botao.addEventListener('click', () => {
+  const r = geraInteiro(255);
+  const g = geraInteiro(255);
+  const b = geraInteiro(255);
+  body.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
+});
+
+geraInteiro = num => parseInt(Math.random() * num);
+>>>>>>> master
