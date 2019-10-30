@@ -19,7 +19,7 @@ function getDados() {
         const response = request.response;//resposta em texto
         const json = JSON.parse(response);// que transforma a resposta em objeto
         const data = json.data // pega o item img do obj
-        const obj = data[0];// esse é o objto
+        const obj = data[0];// esse é o objeto
 
         const imgSrc = obj.imagem//pega só a img do item 0
         img.scr = imgSrc;
